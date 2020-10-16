@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About App</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="productsMenu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item *ngFor="let about of abouts" [routerLink]="['./', about.id]">
+            <ion-label>
+              <ion-img [src]="about.imageUrl"></ion-img>
+              <br />
+              {{ about.title }}
+              <br />
+              <br />
+              {{ about.description }}
+              <br />
+              <br />
+              {{ about.description2 }}
+              <br />
+              <br />
+              {{ about.description3 }}
+              <br />
+              {{ about.description4 }}
+              <br />
+              {{ about.description5 }}
+              <br />
+              {{ about.description6 }}
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
