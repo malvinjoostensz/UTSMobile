@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductsService} from '../../products/products.service';
 
 @Component({
   selector: 'app-modalcard',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalcardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    // private productsService: ProductsService
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // this.products = this.productsService.getAllProducts();
+  }
 
+  async presentList() {
+
+  }
 }

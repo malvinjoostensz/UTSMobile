@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ModalController} from '@ionic/angular';
 
 @Component({
   selector: 'app-modaledit',
@@ -6,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modaledit.component.scss'],
 })
 export class ModaleditComponent implements OnInit {
-
-  constructor() { }
+  constructor(
+    private modalCtrl: ModalController
+  ) { }
 
   ngOnInit() {}
 
+  onCancel() {
+    this.modalCtrl.dismiss(null, 'cancel');
+  }
+
+  onSave() {
+    this.modalCtrl.dismiss();
+  }
 }
