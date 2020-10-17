@@ -25,7 +25,7 @@ export class ProductsService {
     {
       id: 'p3',
       title: 'ZOTAC GAMING GeForce RTX 3090 Trinity',
-      imageUrl: 'https://cdn.thepcenthusiast.com/wp-content/uploads/2020/08/zotac-geforce-rtx-3090-trinity-holo-02.jpg',
+      imageUrl: 'https://www.notebookcheck.net/fileadmin/_processed_/7/2/csm_IMG20200916153255_e73a280998.jpg',
       description: ['Rp28.799.000', 'Stock: 9', 'Brand: ZOTAC'],
       price: 'Rp28.799.000',
       stock: 'Stock: 9'
